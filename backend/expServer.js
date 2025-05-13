@@ -11,7 +11,7 @@ app.use(bodyParser.json()); //รับข้อมูลมาแบบjson
 
 app.use('/api/subject',require('./routes/subject')); ///api/subject require ไปที่ไฟล์นั้นๆ
 app.use('/api/contact',require('./routes/contact'));  ///api/contact require ไปที่ไฟล์นั้นๆ
-
+app.use('/api/subscribe',require('./routes/subscribe'));
 
 
 app.listen (PORT,() =>{
